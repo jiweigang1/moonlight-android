@@ -15,6 +15,10 @@ import java.security.cert.*;
 import java.util.Arrays;
 import java.util.Locale;
 
+/**
+ * 用来进行配对 
+ */
+
 public class PairingManager {
 
     private NvHTTP http;

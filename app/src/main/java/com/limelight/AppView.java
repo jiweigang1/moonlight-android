@@ -627,6 +627,7 @@ public class AppView extends Activity implements AdapterFragmentCallbacks {
     public void receiveAbsListView(AbsListView listView) {
         listView.setAdapter(appGridAdapter);
         listView.setOnItemClickListener(new OnItemClickListener() {
+            // 点击应用开始串流
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int pos,
                                     long id) {

@@ -133,6 +133,7 @@ public class AddComputerManually extends Activity {
             ComputerDetails details = new ComputerDetails();
 
             // Check if we parsed a host address successfully
+            // 获取主机的地址，可以是 IP 也可以是 域名
             URI uri = parseRawUserInputToUri(rawUserInput);
             if (uri != null && uri.getHost() != null && !uri.getHost().isEmpty()) {
                 String host = uri.getHost();

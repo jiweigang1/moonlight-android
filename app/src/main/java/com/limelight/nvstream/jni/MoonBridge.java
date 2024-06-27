@@ -337,7 +337,9 @@ public class MoonBridge {
         MoonBridge.audioRenderer = null;
         MoonBridge.connectionListener = null;
     }
-
+    /**
+     * 调用C代码开启串流
+     */
     public static native int startConnection(String address, String appVersion, String gfeVersion,
                                               String rtspSessionUrl, int serverCodecModeSupport,
                                               int width, int height, int fps,

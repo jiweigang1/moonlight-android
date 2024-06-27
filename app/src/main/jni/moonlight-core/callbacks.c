@@ -451,6 +451,7 @@ hasFastAes() {
     }
 }
 
+//启动链接，并开启串流
 JNIEXPORT jint JNICALL
 Java_com_limelight_nvstream_jni_MoonBridge_startConnection(JNIEnv *env, jclass clazz,
                                                            jstring address, jstring appVersion, jstring gfeVersion,
